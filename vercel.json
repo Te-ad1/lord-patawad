@@ -2,28 +2,29 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "app"
-      }
+      "src": "app/**/*",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/",
-      "dest": "/view/app.html"
+      "dest": "/app/view/app.html"
     },
     {
       "src": "/resources/(.*)",
-      "dest": "/resources/$1"
+      "dest": "/app/resources/$1"
+    },
+    {
+      "src": "/view/(.*)",
+      "dest": "/app/view/$1"
     },
     {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/view/app.html"
+      "dest": "/app/view/app.html"
     }
   ]
 } 
