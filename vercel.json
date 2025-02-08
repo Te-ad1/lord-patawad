@@ -9,15 +9,15 @@
   "routes": [
     {
       "src": "^/$",
-      "dest": "/app/view/works.html"
-    },
-    {
-      "src": "^/works.html$",
-      "dest": "/app/view/works.html"
+      "dest": "/app/view/app.html"
     },
     {
       "src": "^/app.html$",
       "dest": "/app/view/app.html"
+    },
+    {
+      "src": "^/works.html$",
+      "dest": "/app/view/works.html"
     },
     {
       "src": "^/playground.html$",
@@ -52,7 +52,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/app/view/works.html"
+      "dest": "/app/view/app.html"
     }
   ]
 } 
