@@ -12,19 +12,23 @@
       "dest": "/app/view/app.html"
     },
     {
-      "src": "^/works$",
+      "src": "^/works.html$",
       "dest": "/app/view/works.html"
     },
     {
-      "src": "^/playground$",
+      "src": "^/app.html$",
+      "dest": "/app/view/app.html"
+    },
+    {
+      "src": "^/playground.html$",
       "dest": "/app/view/playground.html"
     },
     {
-      "src": "^/contact$",
+      "src": "^/contact.html$",
       "dest": "/app/view/contact.html"
     },
     {
-      "src": "^/resume$",
+      "src": "^/resume.html$",
       "dest": "/app/view/resume.html"
     },
     {
@@ -37,10 +41,6 @@
     },
     {
       "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/app/view/app.html"
     }
   ]
 } 
