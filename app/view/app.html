@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ Leonor</title>
+    <link rel="stylesheet" href="https://use.typekit.net/qzg8zqy.css">
+    <link rel="stylesheet" href="../resources/app.css">
+    <link rel="icon" type="image/png" href="../resources/images/mj.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-content">
+            <div class="logo-animation">
+                <img src="../resources/images/mj.png" alt="MJ Logo" class="mj-logo">
+            </div>
+            <div class="loader-text">LEONOR</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <header>
+                <div class="header-left">
+                    <div class="header-text">AVAILABLE FOR</div>
+                    <div class="header-text">FREELANCE WORK</div>
+                </div>
+                <div class="center-logo">
+                    <img src="../resources/images/mj.png" alt="MJ Logo" class="header-logo">
+                </div>
+                <div class="header-right">
+                    <div class="header-text">OPEN FOR</div>
+                    <div class="header-text">COLLABORATIONS</div>
+                </div>
+            </header>
+
+            <section class="hero">
+                <h1 class="hero-title">DEVELOPING CLEAN AND RESPONSIVE WEBSITES</h1>
+            </section>
+
+            <nav>
+                <div class="nav-item">
+                    <a href="works.html">01 <br>Works</a>
+                    <div class="hover-overlay">WORKS</div>
+                </div>
+                <div class="nav-item">
+                    <a href="playground.html">02 <br>Playground</a>
+                    <div class="hover-overlay">PLAYGROUND</div>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html">03 <br>Contact</a>
+                    <div class="hover-overlay">CONTACT</div>
+                </div>
+                <div class="nav-item">
+                    <a href="resume.html">04 <br>Resume</a>
+                    <div class="hover-overlay">RESUME</div>
+                </div>
+            </nav>
+
+            <div class="content-grid">
+                <div class="content-text">
+                    <span class="label">EXPERTISE</span>
+                    <p>INDEPENDENT PROGRAMMER FOCUSED ON WEB DEVELOPMENT</p>
+                </div>
+                <div class="content-text">
+                    <span class="label">MISSION</span>
+                    <p>PASSIONATE ABOUT CREATING UNFORGETTABLE DYNAMIC WEBSITES</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            // Check if mobile
+            const isMobile = window.innerWidth <= 768;
+            const timing = isMobile ? 2000 : 8000;
+            const fadeDelay = isMobile ? 500 : 1000;
+            
+            setTimeout(() => {
+                document.querySelector('.preloader').classList.add('fade-out');
+                setTimeout(() => {
+                    document.querySelector('.main-content').classList.add('show');
+                }, fadeDelay);
+            }, timing);
+        });
+    </script>
+</body>
+</html>
