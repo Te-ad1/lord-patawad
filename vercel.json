@@ -12,6 +12,26 @@
       "dest": "/app/view/works.html"
     },
     {
+      "src": "^/works.html$",
+      "dest": "/app/view/works.html"
+    },
+    {
+      "src": "^/app.html$",
+      "dest": "/app/view/app.html"
+    },
+    {
+      "src": "^/playground.html$",
+      "dest": "/app/view/playground.html"
+    },
+    {
+      "src": "^/contact.html$",
+      "dest": "/app/view/contact.html"
+    },
+    {
+      "src": "^/resume.html$",
+      "dest": "/app/view/resume.html"
+    },
+    {
       "src": "/app/resources/(.*)",
       "dest": "/app/resources/$1"
     },
