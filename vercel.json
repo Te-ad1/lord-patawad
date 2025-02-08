@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "^/$",
-      "dest": "/app/view/app.html"
+      "dest": "/app/view/works.html"
     },
     {
       "src": "/app/resources/(.*)",
@@ -32,7 +32,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/app/view/app.html"
+      "dest": "/app/view/works.html"
     }
   ]
 } 
